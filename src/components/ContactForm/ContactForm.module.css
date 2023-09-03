@@ -1,4 +1,113 @@
-.formContainer {
+/* .form_wrapper {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 25px;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #dbf4ff;
+  box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+} */
+
+.form_wrapper {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #222831;
+  /* box-shadow: -6px -6px 9px #fff, 11px 11px 21px -8px #000; */
+}
+.label {
+  color: #eeeeee;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* .input {
+  margin-left: 15px;
+  border-radius: 5px;
+  background-color: #f1f5b4;
+  border: 1px solid black;
+} */
+.input {
+  height: 30px;
+  width: 300px;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #222831;
+  border: 1px solid #222831;
+  box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+    1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+}
+
+.input:hover,
+.input:focus {
+  background-color: #eeeeee;
+  border: 1px solid rgba(0, 255, 255, 0.7);
+}
+.button_add {
+  width: 100px;
+  cursor: pointer;
+  color: #00adb5;
+  border: 1px solid #222831;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 700;
+  background-color: #222831;
+  box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+    1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+}
+
+.button_add:hover,
+.button_add:focus {
+  /* cursor: pointer; */
+  border: 1px solid rgba(0, 255, 255, 0.7);
+  background-color: rgba(0, 255, 255, 0.7);
+  /* font-weight: 700; */
+  color: #eeeeee;
+  /* border-radius: 5px; */
+}
+
+/* .icon {
+  position: absolute;
+  top: 1px;
+  left: 5px;
+} */
+
+.error_name {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  top: 37px;
+}
+.error_number {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: 82px;
+  text-align: right;
+}
+
+/* .formContainer {
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -49,4 +158,4 @@
 .formButton:hover,
 .formButton:focus {
   background-color: #d6d6d6;
-}
+} */
