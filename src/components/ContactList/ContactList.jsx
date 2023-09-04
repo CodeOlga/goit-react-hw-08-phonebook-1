@@ -6,7 +6,6 @@ import {
   selectError,
 } from 'redux/contacts/selectors';
 import { selectVisibleContacts } from 'redux/filter/selectors';
-
 import css from './ContactList.module.css';
 
 export const ContactList = () => {

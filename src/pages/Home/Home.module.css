@@ -1,15 +1,29 @@
 .container {
-  min-height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .title {
   color: #eeeeee;
-  font-weight: 500;
-  font-size: 48;
+  font-weight: 500px;
+  font-size: 48px;
   text-align: center;
+  margin-top: 80px;
+}
+.bgImage {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHBob25lfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: -1;
+
+  @media only screen and (max-width: 600px) {
+    top: 110px;
+  }
 }

@@ -9,15 +9,15 @@ export const ContactItem = ({ contact }) => {
   const dispatch = useDispatch();
 
   return (
-    <li className={css.list_item} key={contact.id}>
-      <div className={css.contact_wrp}>
+    <li className={css.listItem} key={contact.id}>
+      <div className={css.contactWrp}>
         <FcPhone size={'1.5em'} />
         {contact.name}: {contact.number}
       </div>
       <button
-        className={css.button_delete}
+        className={css.deleteBtn}
         type="button"
-        onClick={() => dispatch(deleteContact(contact.id))} //Відправляємо action deleteContact в redux store по кліку на кнопці "Delete"
+        onClick={() => dispatch(deleteContact(contact.id))} 
       >
         <AiOutlineDelete size={'1.5em'} />
       </button>

@@ -7,6 +7,7 @@ export const RegisterForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+
     const form = e.currentTarget;
     dispatch(
       register({
@@ -22,17 +23,26 @@ export const RegisterForm = () => {
     <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
       <label className={css.label}>
         Username
-        <input type="text" name="name" />
       </label>
+      <div className={css.inputWrap}>
+        <input className={css.input} type="text" name="name" />
+      </div>
+      
       <label className={css.label}>
         Email
-        <input type="email" name="email" />
       </label>
+      <div className={css.inputWrap}>
+        <input className={css.input} type="email" name="email" />
+      </div>
+
       <label className={css.label}>
         Password
-        <input type="password" name="password" />
       </label>
-      <button type="submit">Register</button>
+      <div className={css.inputWrap}>
+        <input className={css.input} type="password" name="password" />
+      </div>
+      
+      <button  className={css.button} type="submit">Register</button>
     </form>
   );
 };

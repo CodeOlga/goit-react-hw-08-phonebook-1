@@ -7,6 +7,7 @@ export const LoginForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+
     const form = e.currentTarget;
     dispatch(
       logIn({
@@ -21,13 +22,19 @@ export const LoginForm = () => {
     <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
       <label className={css.label}>
         Email
-        <input type="email" name="email" />
       </label>
+      <div className={css.inputWrap}>
+        <input className={css.input} type="email" name="email" />
+      </div>
+
       <label className={css.label}>
         Password
-        <input type="password" name="password" />
       </label>
-      <button type="submit">Log In</button>
+      <div className={css.inputWrap}>
+        <input className={css.input} type="password" name="password" />
+      </div>
+      
+      <button  className={css.button} type="submit">Log In</button>
     </form>
   );
 };

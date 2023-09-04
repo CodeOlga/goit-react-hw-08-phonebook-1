@@ -5,12 +5,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /* color: #010101; */
   color: #eeeeee;
 }
 
 .title {
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .subtitle {
@@ -22,7 +22,7 @@
   font-weight: 500;
 }
 
-.total_count {
+.totalCount {
   font-weight: 700;
   color: #00adb5;
 }

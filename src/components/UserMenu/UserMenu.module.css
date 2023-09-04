@@ -1,9 +1,38 @@
-.wrapper {
+.userWrap {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.username {
-  font-weight: 700;
+.userName {
+  margin-right: 10px;
+  color: #00adb5;
+  font-weight: 600;
+}
+
+.logoutBtn {
+  padding: 3px 10px;
+  color: #eeeeee;
+  background-color: #222831;
+  border-radius: 5px;
+  border: 1px solid #222831;
+  box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+    1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+}
+
+.logoutBtn:hover,
+.logoutBtn:focus {
+  color: red;
+}
+
+.avatar {
+  margin-left: 10px;
+  width: 40px;
+  @media only screen and (max-width: 600px) {
+    width: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
 }

@@ -10,12 +10,10 @@ import {
 import { Toaster } from 'react-hot-toast';
 import { useEffect } from 'react';
 import { fetchContacts } from 'redux/contacts/operations';
-// import { ColorRing } from 'react-loader-spinner';
 import { Loader } from '../../components/Loader/Loader'
-
 import css from './Contacts.module.css';
 
-export default function App() {
+const App = () => {
   const dispatch = useDispatch();
   const count = useSelector(selectContactsCount);
   const isLoading = useSelector(selectIsLoading);
@@ -32,20 +30,11 @@ export default function App() {
       <h2 className={css.subtitle}>Contacts</h2>
       <p className={css.total}>
         Total contacts in phonebook:
-        <span className={css.total_count}> {count}</span>
+        <span className={css.totalCount}> {count}</span>
       </p>
       <Filter />
       {isLoading && !error && (
         <Loader/>
-        // <ColorRing
-        //   visible={true}
-        //   height="80"
-        //   width="80"
-        //   ariaLabel="blocks-loading"
-        //   wrapperStyle={{}}
-        //   wrapperClass="blocks-wrapper"
-        //   colors={['#e15b64', '#f47e60', '#f8b26a', '#4bb36a', '#80bb3d']}
-        // />
       )}
       {error && <p className={css.errorMessage}>An error occurred: {error}</p>}
       <ContactList />
@@ -53,3 +42,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
