@@ -3,36 +3,36 @@ import axios from 'axios';
 
 export const fetchContacts = createAsyncThunk(
   'contacts/fetchAll',
-  async function (_, { rejectWithValue }) {
+  async function (_, thunkAPI) {
     try {
       const { data } = await axios.get('/contacts');
       return data;
     } catch (error) {
-      return rejectWithValue(error.message);
+      return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
 
 export const addContact = createAsyncThunk(
   'contacts/addContact',
-  async function (contact, { rejectWithValue }) {
+  async function (contact, thunkAPI) {
     try {
       const { data } = await axios.post('/contacts', contact); //другим параметром передаємо об'єкт даних
       return data;
     } catch (error) {
-      return rejectWithValue(error.message);
+      return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
 
 export const deleteContact = createAsyncThunk(
   'contacts/deleteContact',
-  async function (contactId, { rejectWithValue }) {
+  async function (contactId, thunkAPI) {
     try {
       const { data } = await axios.delete(`/contacts/${contactId}`);
       return data;
     } catch (error) {
-      return rejectWithValue(error.message);
+      return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
