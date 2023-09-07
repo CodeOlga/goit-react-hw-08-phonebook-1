@@ -51,7 +51,7 @@
 .input:focus {
   color: #222831;
   background-color: #eeeeee;
-  /* border: 1px solid rgba(0, 255, 255, 0.7); */
+  border: 1px solid rgba(0, 255, 255, 0.7);
 }
 
 .button:hover,
