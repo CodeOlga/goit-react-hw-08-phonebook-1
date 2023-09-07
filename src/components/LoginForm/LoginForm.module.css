@@ -3,6 +3,7 @@
   color: #eeeeee;
   margin-top: 50px;
 }
+
 .label {
   color: #eeeeee;
   display: flex;
@@ -40,7 +41,7 @@
 
 .input {
   height: 30px;
-  /* width: 310px; */
+  width: 314px;
   color: #eeeeee;
   border-radius: 5px;
   background-color: transparent;
