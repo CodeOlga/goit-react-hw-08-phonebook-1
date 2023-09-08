@@ -50,6 +50,7 @@
 
 .input:hover,
 .input:focus {
+  width: 314px;
   color: #222831;
   background-color: #eeeeee;
   border: 1px solid rgba(0, 255, 255, 0.7);
