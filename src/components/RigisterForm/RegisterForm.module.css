@@ -15,6 +15,7 @@
 }
 
 .inputWrap {
+  width: 320px;
   background-color: #222831;
   border-radius: 5px;
   box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
@@ -24,8 +25,10 @@
 }
 
 .input {
-  height: 30px;
-  width: 306px;
+  height: 36px;
+  /* width: 306px; */
+  width: 100%;
+  box-sizing: border-box;
   color: #eeeeee;
   border-radius: 5px;
   background-color: transparent;
